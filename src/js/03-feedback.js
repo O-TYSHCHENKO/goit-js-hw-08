@@ -25,7 +25,7 @@ function oldDataOnForm() {
   const oldInputVAlues = localStorage.getItem(localStKey);
   if (oldInputVAlues) {
     formValuesSt = JSON.parse(oldInputVAlues);
-    for (key in formValuesSt) {
+    for (let key in formValuesSt) {
       formSelect[key].value = formValuesSt[key];
     }
   }
