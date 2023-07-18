@@ -31,5 +31,5 @@ function oldDataOnForm() {
   }
 }
 oldDataOnForm();
-formSelect.addEventListener('input', throttle(onFormInput), 500);
+formSelect.addEventListener('input', throttle(onFormInput, 500));
 formSelect.addEventListener('submit', onFormSubmit);
